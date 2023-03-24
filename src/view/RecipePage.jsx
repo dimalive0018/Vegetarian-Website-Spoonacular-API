@@ -36,9 +36,9 @@ export const RecipePage = () => {
             <img className='rounded-xl mx-auto h-80 w-80 md:h-[420px] md:w-[600px] xl:h-[600px] xl:w-[780px]' src={information.image} alt=''></img>
         </div>
         <div className='flex flex-row justify-center'>
-            <button className='text-center m-5 text-[8px] md:text-[10px] xl:text-xs rounded-xl shadow-nav hover:shadow-image active:shadow-active bg-[#DD4124] text-white hover:bg-white hover:text-black hover:opacity-60 active:scale-[0.9] h-7 w-14 md:h-10 md:w-16 xl:h-12 xl:w-20 font-extrabold' onClick={() => setType('info')}>About</button>
-            <button className='text-center m-5 text-[8px] md:text-[10px] xl:text-xs rounded-xl shadow-nav hover:shadow-image active:shadow-active bg-[#DD4124] text-white hover:bg-white hover:text-black hover:opacity-60 active:scale-[0.9] h-7 w-14 md:h-10 md:w-16 xl:h-12 xl:w-20 font-extrabold' onClick={() => setType('prep')}>Instructions</button>
-            <button className='text-center m-5 text-[8px] md:text-[10px] xl:text-xs rounded-xl shadow-nav hover:shadow-image active:shadow-active bg-[#DD4124] text-white hover:bg-white hover:text-black hover:opacity-60 active:scale-[0.9] h-7 w-14 md:h-10 md:w-16 xl:h-12 xl:w-20 font-extrabold' onClick={() => setType('ingr')}>Ingredients</button>
+            <button className='text-center m-5 text-[5px] md:text-[10px] xl:text-[15px] rounded-xl shadow-nav hover:shadow-image active:shadow-active bg-[#DD4124] text-white hover:bg-white hover:text-black hover:opacity-60 active:scale-[0.9] h-7 w-14 md:h-10 md:w-16 xl:h-12 xl:w-20 font-extrabold' onClick={() => setType('info')}>About</button>
+            <button className='text-center m-5 text-[5px] md:text-[10px] xl:text-[15px] rounded-xl shadow-nav hover:shadow-image active:shadow-active bg-[#DD4124] text-white hover:bg-white hover:text-black hover:opacity-60 active:scale-[0.9] h-7 w-14 md:h-10 md:w-16 xl:h-12 xl:w-20 font-extrabold' onClick={() => setType('prep')}>Instructions</button>
+            <button className='text-center m-5 text-[5px] md:text-[10px] xl:text-[15px] rounded-xl shadow-nav hover:shadow-image active:shadow-active bg-[#DD4124] text-white hover:bg-white hover:text-black hover:opacity-60 active:scale-[0.9] h-7 w-14 md:h-10 md:w-16 xl:h-12 xl:w-20 font-extrabold' onClick={() => setType('ingr')}>Ingredients</button>
         </div>
         {type === 'info' && (
             <div>
