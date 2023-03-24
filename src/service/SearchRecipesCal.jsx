@@ -39,7 +39,7 @@ export const SearchRecipesCal = () => {
       {recipes.slice(0, selectorNumber).map((recipe) => {
       return (
         <div className="h-full md:m-8 xl:m-12 flex flex-row-reverse" key={recipe.id}>
-          <h3 className="text-[0.6rem] md:text-base xl:text-xl font-extrabold mx-auto my-auto text-black">{recipe.title}</h3>
+          <h3 className="text-[0.4rem] md:text-base xl:text-xl font-extrabold mx-auto my-auto text-black">{recipe.title}</h3>
           <Link to={'/recipes/' + recipe.id}>
             <img className="h-32 w-32 md:h-48 md:w-48 xl:h-64 xl:w-64 block rounded-lg md:rounded-3xl hover:shadow-image active:scale-95 active:shadow-active" src={recipe.image} alt='' />
           </Link>
