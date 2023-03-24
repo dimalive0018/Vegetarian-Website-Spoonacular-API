@@ -13,7 +13,7 @@ export const SearchRecipesCal = () => {
   let selectorNumber = useSelector((state) => state.number.value.numberSlice);
   const params = useParams();
   const searchedRecipes = async (type) => {
-    const api = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${import.meta.env.VITE_SPO_API_KEY}&maxCalories=${type}&diet=vegetarian&number=100000`).then(({data}) => data);
+    const api = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=6177107e0e6c4215bcadc9f1b23c2ccc&maxCalories=${type}&diet=vegetarian&number=100000`).then(({data}) => data);
     try {
       if (typeof api !== 'undefined'){
         return api;
