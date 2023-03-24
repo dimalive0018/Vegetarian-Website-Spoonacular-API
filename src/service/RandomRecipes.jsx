@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 export const RandomRecipes = () => {
   const [randomPick, setRandomPick] = useState([]);
   const randomRecipes = async () => {
-    const api = await axios.get(`https://api.spoonacular.com/recipes/random?apiKey=${import.meta.env.VITE_SPO_API_KEY}&number=10&tags=vegetarian`).then(({data}) => data);
+    const api = await axios.get(`https://api.spoonacular.com/recipes/random?apiKey=6177107e0e6c4215bcadc9f1b23c2ccc&number=10&tags=vegetarian`).then(({data}) => data);
       try {
         if (typeof api !== 'undefined'){
           return api;
