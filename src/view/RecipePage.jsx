@@ -8,7 +8,7 @@ export const RecipePage = () => {
     const [type, setType] = useState('info')
     let params = useParams();
     const apiId = async () => {
-        const api = await axios.get(`https://api.spoonacular.com/recipes/${params.id}/information?apiKey=6177107e0e6c4215bcadc9f1b23c2ccc`).then(({data}) => data);
+        const api = await axios.get(`https://api.spoonacular.com/recipes/${params.id}/information?apiKey=${import.meta.env.VITE_SPO_API_KEY}`).then(({data}) => data);
         try {
             if (typeof api !== 'undefined'){
               return api;
