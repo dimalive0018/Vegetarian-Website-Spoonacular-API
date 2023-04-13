@@ -1,7 +1,14 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig, loadEnv } from 'vite';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-})
+  build: {
+    rollupOptions: {
+      input: 'src/main.js',
+    },
+  },
+  envDir: '.',
+  define: {
+    'process.env': loadEnv(process.env.NODE_ENV, process.cwd()),
+  },
+});
