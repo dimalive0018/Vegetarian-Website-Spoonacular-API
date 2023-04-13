@@ -13,7 +13,7 @@ export const RecipePage = () => {
     const [type, setType] = useState('info')
     let params = useParams();
     const apiId = async () => {
-        const api = await base.get(`${params.id}/information?apiKey=${import.meta.env.VITE_API_KEY}`).then(({data}) => data);
+        const api = await base.get(`${params.id}/information?apiKey=${process.env.VITE_API_KEY}`).then(({data}) => data);
         try {
             if (typeof api !== 'undefined'){
                 return api;
