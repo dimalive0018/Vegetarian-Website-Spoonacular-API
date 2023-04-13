@@ -20,7 +20,7 @@ export const SearchRecipesIngr = () => {
   let selectorLoad = useSelector((state) => state.handleLoad.value.handleLoadState);
   const params = useParams();
   const searchedRecipes = async (type) => {
-    const api = await base.get(`complexSearch?apiKey=${import.meta.env.VITE_API_KEY}&diet=vegetarian&number=100000&query=${type}`).then(({data}) => data);
+    const api = await base.get(`complexSearch?apiKey=${process.env.API_KEY}&diet=vegetarian&number=100000&query=${type}`).then(({data}) => data);
     try {
       if (typeof api !== 'undefined'){
         return api;
