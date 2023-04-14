@@ -25,7 +25,7 @@ Trovi il progetto [qui](https://brocole.netlify.app/)
 ## Utilizzo
 Sito di ricette vegetariane con API di Spoonacular.
 Ha tre pulsanti per tre differenti ricerche, per ingrediente, per calorie massime e per intolleranza alimentare e, nella home, 10 tra le ricette più ricercate.
-La pagina di ricerca presenta altri cinque risultati con un pulsante, Load More, che permette di caricarne altre cinque fino a un massimo di mille.
+La pagina di ricerca presenta altri cinque risultati con un pulsante, Load More, che permette di caricarne altre cinque fino alla fine delle ricette prensenti nell'API.
 La pagina con la ricetta presenta tre pulsanti con le informazioni, la preparazione e gli ingredienti.
 ## Autore
 * [Livio Dimola](https://github.com/liviodimola) - *novello Full Stack Developer*
