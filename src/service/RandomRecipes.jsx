@@ -7,6 +7,7 @@ import { AnimatePresence, motion } from "framer-motion"
 import { Spinner } from "../comp/Spinner";
 import { ResultsNotFound } from "../comp/ResultsNotFound";
 import { random } from "./AxiosClient";
+import { SeoHelmet } from "../comp/SeoHelmet";
 
 export const RandomRecipes = () => {
   const [randomPick, setRandomPick] = useState([]);
@@ -40,6 +41,7 @@ export const RandomRecipes = () => {
     
   return (
     <>
+    <SeoHelmet title={'Brocòle - Vegetarian Recipes - Website'} description={"Brocòle - Vegetarian recipes website - powered by Spoonacular API"} />
     {loading === null && (
       <AnimatePresence mode='wait'>
       <motion.div
