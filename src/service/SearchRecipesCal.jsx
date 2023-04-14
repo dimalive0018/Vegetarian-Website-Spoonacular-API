@@ -104,7 +104,7 @@ export const SearchRecipesCal = () => {
             return (
               <div className="h-full my-5 mx-3 md:m-8 xl:m-10 flex flex-col md:flex-row-reverse justify-around items-center border-b-2 border-[#608E43]" key={recipe.id}>
                 <Link className='h-14 w-52 md:h-52 md:w-64 xl:h-64 xl:w-80 flex justify-center items-center' to={'/recipes/' + recipe.id}>
-                  <h3 className="text-center items-center md:text-right text-base md:text-xl xl:text-3xl font-extrabold mx-auto my-auto text-black hover:text-[#608E43]">{recipe.title}</h3>
+                  <h3 className="text-center items-center text-base md:text-xl xl:text-3xl font-extrabold mx-auto my-auto text-black hover:text-[#608E43]">{recipe.title}</h3>
                 </Link>
                 <Link to={'/recipes/' + recipe.id}>
                   <img className="h-36 w-52 md:h-52 md:w-64 xl:h-64 xl:w-80 rounded-lg md:rounded-3xl hover:shadow-image active:scale-95 active:shadow-active my-5 mx-1 md:m-5" src={recipe.image} alt='image not available' />
